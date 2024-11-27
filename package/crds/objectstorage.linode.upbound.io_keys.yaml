@@ -396,21 +396,6 @@ spec:
                       type: string
                     type: array
                     x-kubernetes-list-type: set
-                  regionsDetails:
-                    description: |-
-                      A set of objects containing the detailed info of the regions where this key can access.
-                      A set of objects containing the detailed info of the regions where the key will grant access.
-                    items:
-                      properties:
-                        id:
-                          description: The ID of the region.
-                          type: string
-                        s3Endpoint:
-                          description: The S3-compatible hostname you can use to access
-                            the Object Storage buckets in this region.
-                          type: string
-                      type: object
-                    type: array
                 type: object
               conditions:
                 description: Conditions of the resource.

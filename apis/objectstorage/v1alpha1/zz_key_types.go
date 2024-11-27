@@ -111,10 +111,6 @@ type KeyObservation struct {
 	// A set of regions where the key will grant access to create buckets.
 	// +listType=set
 	Regions []*string `json:"regions,omitempty" tf:"regions,omitempty"`
-
-	// A set of objects containing the detailed info of the regions where this key can access.
-	// A set of objects containing the detailed info of the regions where the key will grant access.
-	RegionsDetails []RegionsDetailsObservation `json:"regionsDetails,omitempty" tf:"regions_details,omitempty"`
 }
 
 type KeyParameters struct {

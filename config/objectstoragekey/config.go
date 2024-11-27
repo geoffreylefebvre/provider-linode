@@ -9,5 +9,6 @@ func Configure(p *config.Provider) {
 		r.ShortGroup = "objectstorage"
 		r.Kind = "Key"
 		r.TerraformResource.Schema["access_key"].Sensitive = true
+		r.TerraformResource.Schema["regions_details"].Sensitive = true
 	})
 }
