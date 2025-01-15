@@ -140,7 +140,6 @@ spec:
                     items:
                       type: number
                     type: array
-                    x-kubernetes-list-type: set
                   linodesRefs:
                     description: References to Instance in instance to populate linodes.
                     items:
@@ -366,7 +365,6 @@ spec:
                     items:
                       type: number
                     type: array
-                    x-kubernetes-list-type: set
                   linodesRefs:
                     description: References to Instance in instance to populate linodes.
                     items:
@@ -793,7 +791,6 @@ spec:
                     items:
                       type: number
                     type: array
-                    x-kubernetes-list-type: set
                   nodebalancers:
                     description: |-
                       A list of IDs of NodeBalancers this Firewall should govern network traffic for.

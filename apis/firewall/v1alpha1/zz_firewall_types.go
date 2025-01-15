@@ -57,7 +57,6 @@ type FirewallInitParameters struct {
 	// A list of IDs of Linodes this Firewall should govern network traffic for.
 	// The IDs of Linodes to apply this firewall to.
 	// +crossplane:generate:reference:type=github.com/linode/provider-linode/apis/instance/v1alpha1.Instance
-	// +listType=set
 	Linodes []*float64 `json:"linodes,omitempty" tf:"linodes,omitempty"`
 
 	// References to Instance in instance to populate linodes.
@@ -114,7 +113,6 @@ type FirewallObservation struct {
 
 	// A list of IDs of Linodes this Firewall should govern network traffic for.
 	// The IDs of Linodes to apply this firewall to.
-	// +listType=set
 	Linodes []*float64 `json:"linodes,omitempty" tf:"linodes,omitempty"`
 
 	// A list of IDs of NodeBalancers this Firewall should govern network traffic for.
@@ -167,7 +165,6 @@ type FirewallParameters struct {
 	// The IDs of Linodes to apply this firewall to.
 	// +crossplane:generate:reference:type=github.com/linode/provider-linode/apis/instance/v1alpha1.Instance
 	// +kubebuilder:validation:Optional
-	// +listType=set
 	Linodes []*float64 `json:"linodes,omitempty" tf:"linodes,omitempty"`
 
 	// References to Instance in instance to populate linodes.
